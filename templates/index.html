@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action = "" method = 'POST'>{% csrf_token %}
+        <input type = 'number' name = 'creditScore' placeholder="Credit Score">
+        <input type = 'number' name = 'Age' placeholder="Age">
+        <input type = 'number' name = 'Tenure' placeholder="Tenure">
+        <input type = 'number' name = 'Balance' placeholder="Balance">
+        <input type = 'number' name = 'NumOfProducts' placeholder="NumOfProducts">
+        <input type = 'number' name = 'HasCrCard' placeholder="HasCrCard">
+        <input type = 'number' name = 'IsActiveMember' placeholder="IsActiveMember">
+        <input type = 'number' name = 'EstimatedSalary' placeholder="Estimated salary">
+        <input type = 'number' name = 'GeographyGermany' placeholder="Geography Germany">
+        <input type = 'number' name = 'GeographySpain' placeholder="Geography Spain">
+        <input type = 'number' name = 'GenderMale' placeholder="Gender Male">
+        <input type="submit" value="Submit" />
+    </form>
+    <h1>{{result}}</h1>
+</body>
+</html>
