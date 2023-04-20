@@ -11,8 +11,6 @@ def getDetails(request):
     if request.method == "POST":
         predictor = [int(request.POST['creditScore']), 
                     int(request.POST['Age']),
-
-                    
                     int(request.POST['Tenure']),
                     int(request.POST['Balance']),
                     int(request.POST['NumOfProducts']),
