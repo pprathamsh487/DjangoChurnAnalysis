@@ -4,7 +4,7 @@ from joblib import load
 # Create your views here.
 from pathlib import Path
 THIS_FOLDER = Path(__file__).parent.resolve()
-my_file = THIS_FOLDER / "savedModels/myfile.txt"
+my_file = THIS_FOLDER / "savedModels/model.joblib"
 model = load(my_file)
 
 def getDetails(request):
